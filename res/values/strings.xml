@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="application_name">BMI Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="weightInKilogram">Weight(in Kg)</string>
+    <string name="HeightInCentimeter">Height (in Cm)</string>
+    <string name="HeightInMeter">Height (in meters)</string>
+    <string name="bmiCalcButton">BMI</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="english">English</string>
+    <string name="metric">Metric</string>
+    <string name="yourBmiIs">Your BMI is :</string>
+    <string name="calculate">Calculate</string>
+
+</resources>

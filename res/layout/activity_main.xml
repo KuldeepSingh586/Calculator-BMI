@@ -1,0 +1,117 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/GridLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="6"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bmicalculator.MainActivity" >
+
+    <TextView
+        android:id="@+id/HeightTextView"
+        android:layout_columnSpan="3"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"
+        android:layout_row="1"
+        android:labelFor="@+id/heightFieldEditText"
+        android:text="@string/height"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/weightFieldEditText"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginLeft="2dp"
+        android:layout_row="0"
+        android:ems="10"
+        android:inputType="number|numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/heightFieldEditText"
+        android:layout_height="50dp"
+        android:layout_column="4"
+        android:layout_gravity="fill_horizontal"
+        android:ems="10"
+        android:inputType="number|numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_column="3"
+        android:layout_columnSpan="2"
+        android:layout_gravity="left" >
+
+        <RadioButton
+            android:id="@+id/englishRadioButtom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="@string/english" />
+
+        <RadioButton
+            android:id="@+id/metricRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/metric" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/WeightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_columnSpan="3"
+        android:layout_gravity="left|top"
+        android:layout_marginTop="19dp"
+        android:layout_row="0"
+        android:labelFor="@+id/weightFieldEditText"
+        android:text="@string/weight"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/yourBmiTextView"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="left"
+        android:layout_row="4"
+        android:text="@string/yourBmiIs"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/bmiTextView"
+        android:layout_column="3"
+        android:layout_columnSpan="2"
+        android:layout_gravity="left"
+        android:layout_marginTop="26dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:width="150dp" />
+
+    <TextView
+        android:id="@+id/weightFieldtextView"
+        android:layout_column="2"
+        android:layout_columnSpan="3"
+        android:layout_gravity="left"
+        android:layout_marginTop="25dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:width="140dp" />
+
+    <Button
+        android:id="@+id/bmiCalculatorButton"
+        android:layout_column="3"
+        android:layout_columnSpan="2"
+        android:layout_gravity="left"
+        android:layout_row="3"
+        android:text="@string/calculate" />
+
+    <Space
+        android:layout_column="5"
+        android:layout_gravity="fill_vertical"
+        android:layout_row="6" />
+
+</GridLayout>
